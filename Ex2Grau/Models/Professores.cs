@@ -1,8 +1,22 @@
 ﻿namespace Ex2Grau.Models
 {
-    public class Professores
+    public class Professores : Utilizadores
     {
-        public int Id { get; set; }
+
+
+
+
+
+
+        public Professores() { 
+         ListaUCs = new HashSet<UnidadesCurriculares>();
+        }
+
+        /* ************************************************** 
+     *  Vamos criar as Relações  (Fks) com outras tabelas
+     */
+        // Relacionamento de M-N SEM atributos do relacionamento
+        public ICollection<UnidadesCurriculares> ListaUCs { get; set;}
 
     }
 }
