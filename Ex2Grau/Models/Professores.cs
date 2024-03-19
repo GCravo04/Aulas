@@ -2,5 +2,7 @@
 {
     public class Professores
     {
+        public int Id { get; set; }
+
     }
 }
