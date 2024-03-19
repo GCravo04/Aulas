@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ex2Grau.Models
 {
@@ -12,6 +13,7 @@ namespace Ex2Grau.Models
         }
 
 
+        [Key]
         public int Id { get; set; }
 
         public string Nome { get; set; }
